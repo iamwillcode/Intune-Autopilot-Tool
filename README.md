@@ -15,32 +15,33 @@ It also checks Hardware and Software to ensure the device being onbaorded is com
 It logs every step to a local log file located at C:\ProgramData\Autopilot_serialNumber_LOG.txt file and uploads this log file to Azure Storage.
 It also uploads all the script actions and outputs to Azure Log Analytics (Workbook_Screenshot.jpg), where with a simple Workbook you can showcase all onboarding attempts by the Tool.
 
-#REQUIREMENTS
+# REQUIREMENTS
 
 ALL NEEDED FILEDS IN THE SCRIPT HAVE "#ChangeMe" STRING SO THEY CAN BE EASILY IDENTIFIED AND ALTERED TO YOUR VALUES, just use Find.
-- You need to have every User in your Azure AD with the extensionAttribute5 field filled in the GroupTag value (Tag) of the sub-company the User belongs to.
-- You need to upload the MahApps.Metro DLL files to an Azure Blob storage, so these can be retrived by the script upon execution.
-- You need to setup an Azure Applicaion with, at least,the following previleges over your Intune and Azure AD:
 
- -DeviceManagementConfiguration.Read.All
+## - You need to have every User in your Azure AD with the extensionAttribute5 field filled in the GroupTag value (Tag) of the sub-company the User belongs to.
+## - You need to upload the MahApps.Metro DLL files to an Azure Blob storage, so these can be retrived by the script upon execution.
+## - You need to setup an Azure Applicaion with, at least,the following previleges over your Intune and Azure AD:
+
+### -DeviceManagementConfiguration.Read.All
 Application
 Read Microsoft Intune device configuration and policies
 Yes
 Granted for your Company Azure
 
- -DeviceManagementManagedDevices.Read.All
+### -DeviceManagementManagedDevices.Read.All
 Application
 Read Microsoft Intune devices
 Yes
 Granted for your Company Azure
 
- -DeviceManagementServiceConfig.ReadWrite.All
+### -DeviceManagementServiceConfig.ReadWrite.All
 Application
 Read and write Microsoft Intune configuration
 Yes
 Granted for your Company Azure
 
- -Directory.Read.All
+### -Directory.Read.All
 Application
 Read directory data
 Yes
