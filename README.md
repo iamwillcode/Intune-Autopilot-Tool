@@ -1,7 +1,7 @@
 # Intune-Autopilot-Tool
 Powershell Script with WPF GUI to onboard Devices to Intune through Microsoft GRAPH API
 
-![alt text](https://github.com/Joaogcp/Intune-Autopilot-Tool/blob/main/GUI.jpg?raw=true)
+![alt text](https://github.com/Joaogcp/Intune-Autopilot-Tool/blob/main/GUI_Screenshot.jpg?raw=true)
 
 With this script you can automatically onboard (register) or re-assign Windows Devices onto your Organization Intune, without having to perfom all the manual tasks like, unencrypting the Disk, enabling Windows Recovery, checking and applying a specific Autopilot Profile, assigning the Device to a specific User.
 
