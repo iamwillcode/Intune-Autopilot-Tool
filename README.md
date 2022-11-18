@@ -19,9 +19,9 @@ It also uploads all the script actions and outputs to Azure Log Analytics (Workb
 
 ALL NEEDED FILEDS IN THE SCRIPT HAVE "#ChangeMe" STRING SO THEY CAN BE EASILY IDENTIFIED AND ALTERED TO YOUR VALUES, just use Find.
 
-## - You need to have every User in your Azure AD with the extensionAttribute5 field filled in the GroupTag value (Tag) of the sub-company the User belongs to.
-## - You need to upload the MahApps.Metro DLL files to an Azure Blob storage, so these can be retrived by the script upon execution.
-## - You need to setup an Azure Applicaion with, at least,the following previleges over your Intune and Azure AD:
+### - You need to have every User in your Azure AD with the extensionAttribute5 field filled in the GroupTag value (Tag) of the sub-company the User belongs to.
+### - You need to upload the MahApps.Metro DLL files to an Azure Blob storage, so these can be retrived by the script upon execution.
+### - You need to setup an Azure Applicaion with, at least,the following previleges over your Intune and Azure AD:
 
 ### -DeviceManagementConfiguration.Read.All
 Application
