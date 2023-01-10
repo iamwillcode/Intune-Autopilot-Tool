@@ -1,4 +1,4 @@
-﻿#############################
+#############################
 #DEFINE YOUR TENANT DATA HERE
 #############################
 #Azure Tenant App and Secret
@@ -3622,8 +3622,8 @@ Validates if the Device Hardware, OS Build and OS Version are compatible with In
 		Create-Log -Type 1 -Message "Uploading Data to $Global:externalCompanyName Azure Log Analytics."
 			$Date = (Get-Date)
 			
-			$LogAnalyticsId = "b218e0d7-e51b-48a4-a3f5-f46f1b10ea1e"
-			$LogAnalyticsKey = "HjV5JFPd6DSFCkwhImmyRh9c1cj/mhapHbD+uf0G2XR+E6QPLFZJkSag2hlX4UCJ1uRfLLsSucLkTrh5DbsF5A=="
+			$LogAnalyticsId = "YourLogAnalyticsID"
+			$LogAnalyticsKey = "YourLogAnalyticsKey"
 			$logName = "AutopilotToolLogs"
 			# You can use an optional field to specify the timestamp from the data. If the time field is not specified, Azure Monitor assumes the time is the message ingestion time
 			# DO NOT DELETE THIS VARIABLE. Recommended keep this blank. 
